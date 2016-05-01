@@ -1,0 +1,19 @@
+{
+    "name": "required/wp-requirements-check",
+    "description": "Simple requirements checking class",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "required",
+            "email": "support@required.ch",
+            "homepage": "http://required.ch",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "required\\": ""
+        }
+    }
+}
