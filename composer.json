@@ -12,8 +12,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {
-            "required\\": ""
-        }
+        "classmap": ["WP_Requirements_Check.php"]
     }
 }

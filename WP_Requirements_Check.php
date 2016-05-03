@@ -5,8 +5,6 @@
  * @package WP_Requirements_Check
  */
 
-namespace required;
-
 /**
  * Simple requirements checking class.
  */
