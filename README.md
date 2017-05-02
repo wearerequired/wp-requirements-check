@@ -10,7 +10,7 @@ Simple drop-in class to check minimum PHP and WordPress version requirements in 
 ```php
 $requirements_check = new WP_Requirements_Check( array(
 	'title' => 'My awesome plugin',
-	'php'   => '6.0',
+	'php'   => '7.0',
 	'wp'    => '4.7',
 	'file'  => __FILE__,
 ) );
