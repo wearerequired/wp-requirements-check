@@ -1,17 +1,19 @@
 {
-    "name": "wearerequired/wp-requirements-check",
-    "description": "Simple requirements checking class",
-    "license": "GPL-2.0+",
-    "authors": [
-        {
-            "name": "required",
-            "email": "support@required.ch",
-            "homepage": "http://required.ch",
-            "role": "Developer"
-        }
-    ],
-    "require": {},
-    "autoload": {
-        "classmap": ["WP_Requirements_Check.php"]
+  "name":        "wearerequired/wp-requirements-check",
+  "description": "Simple requirements checking class",
+  "license":     "GPL-2.0+",
+  "authors":     [
+    {
+      "name":     "required",
+      "email":    "support@required.ch",
+      "homepage": "http://required.com",
+      "role":     "Developer"
     }
+  ],
+  "require":     {},
+  "autoload":    {
+    "classmap": [
+      "WP_Requirements_Check.php"
+    ]
+  }
 }
