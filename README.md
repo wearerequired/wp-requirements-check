@@ -4,7 +4,7 @@ Simple drop-in class to check minimum PHP and WordPress version requirements in 
 
 ## Usage
 
-1. Run `composer require wearerequired/openinbound-wordpress`
+1. Run `composer require wearerequired/wp-requirements-check`
 2. In your main plugin file, instantiate the class using something like this:
 
 ```php
