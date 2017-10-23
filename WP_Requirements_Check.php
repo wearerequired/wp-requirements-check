@@ -55,7 +55,14 @@ class WP_Requirements_Check {
 	 * @since 1.0.0
 	 * @access public
 	 *
-	 * @param array $args An array of arguments to overwrite the default requirements.
+	 * @param array $args {
+	 *     An array of arguments to overwrite the default requirements.
+	 *
+	 *     @type string $title Name of the plugin.
+	 *     @type string $php   Minimum required PHP version.
+	 *     @type string $wp    Minimum required WordPress version.
+	 *     @type string $file  Path to the main plugin file.
+	 * }
 	 */
 	public function __construct( $args ) {
 		foreach ( array( 'title', 'php', 'wp', 'file' ) as $setting ) {
