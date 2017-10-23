@@ -6,11 +6,24 @@
     {
       "name":     "required",
       "email":    "support@required.ch",
-      "homepage": "http://required.com",
-      "role":     "Developer"
+      "homepage": "https://required.com",
+      "role":     "Company"
+    },
+    {
+      "name":  "Pascal Birchler",
+      "email": "pascal@required.ch",
+      "role":  "Developer"
+    },
+    {
+      "name":  "Ulrich Pogson",
+      "email": "ulrich@required.ch",
+      "role":  "Developer"
     }
   ],
-  "require":     {},
+  "keywords": [
+    "wordpress",
+    "requirements"
+  ],
   "autoload":    {
     "classmap": [
       "WP_Requirements_Check.php"
