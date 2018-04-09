@@ -140,9 +140,10 @@ class WP_Requirements_Check {
 	 * @access public
 	 */
 	public function php_version_notice() {
+		$message = apply_filters( 'wp_requirements_check_php_notice', 'The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade.' );
 		?>
 		<div class="error">
-			<p><?php printf( 'The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade.', esc_html( $this->title ), $this->php ); ?></p>
+			<p><?php printf( $message, esc_html( $this->title ), $this->php ); ?></p>
 		</div>
 		<?php
 	}
@@ -185,9 +186,10 @@ class WP_Requirements_Check {
 	 * @access public
 	 */
 	public function wp_version_notice() {
+		$message = apply_filters( 'wp_requirements_check_wordpress_notice', 'The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. Please update WordPress.' );
 		?>
 		<div class="error">
-			<p><?php printf( 'The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. Please update WordPress.', esc_html( $this->title ), $this->wp ); ?></p>
+			<p><?php printf( $message, esc_html( $this->title ), $this->wp ); ?></p>
 		</div>
 		<?php
 	}
