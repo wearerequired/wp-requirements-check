@@ -140,7 +140,16 @@ class WP_Requirements_Check {
 	 * @access public
 	 */
 	public function php_version_notice() {
-		$message = apply_filters( 'wp_requirements_check_php_notice', 'The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade.' );
+		/**
+		 * Filters the notice for outdated PHP versions.
+		 *
+		 * @since x.y
+		 *
+		 * @param string $message The message.
+		 * @param string $title   The plugin name.
+		 * @param string $php     The PHP version.
+		*/
+		$message = apply_filters( 'wp_requirements_check_php_notice', 'The &#8220;%1$s&#8221; plugin cannot run on PHP versions older than %2$s. Please contact your host and ask them to upgrade.' );
 		?>
 		<div class="error">
 			<p><?php printf( $message, esc_html( $this->title ), $this->php ); ?></p>
@@ -186,7 +195,16 @@ class WP_Requirements_Check {
 	 * @access public
 	 */
 	public function wp_version_notice() {
-		$message = apply_filters( 'wp_requirements_check_wordpress_notice', 'The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. Please update WordPress.' );
+		/**
+		 * Filters the notice for outdated WordPress versions.
+		 *
+		 * @since x.y
+		 *
+		 * @param string $message The message.
+		 * @param string $title   The plugin name.
+		 * @param string $php     The WordPress version.
+		*/
+		$message = apply_filters( 'wp_requirements_check_wordpress_notice', 'The &#8220;%1$s&#8221; plugin cannot run on WordPress versions older than %2$s. Please update your WordPress.' );
 		?>
 		<div class="error">
 			<p><?php printf( $message, esc_html( $this->title ), $this->wp ); ?></p>
